@@ -1,0 +1,7 @@
+[run]
+branch = True
+omit =
+    src/crust/__main__.py
+    tests/*
+    venv/*
+source = src/
