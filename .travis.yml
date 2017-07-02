@@ -1,0 +1,16 @@
+language: python
+install: pip install tox
+env:
+    - TOXENV=py27
+matrix:
+    fast_finish: true
+    include:
+        - env: TOXENV=lint
+          python: '2.7'
+        - env: TOXENV=py27
+          python: '2.7'
+        - env: TOXENV=pep8
+          python: '2.7'
+script:
+    - tox -e $TOXENV
+cache: pip
