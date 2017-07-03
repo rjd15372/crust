@@ -5,12 +5,17 @@ engines:
             languages:
                 python:
                     mass_threshold: 50
-    radon: 
+    radon:
         enabled: true
-        config: 
+        config:
             threshold: "D"
     pep8:
         enabled: true
+
+ratings:
+    paths:
+        - src/**.py
+        - src/**
 
 languages:
     Ruby: false
@@ -21,5 +26,3 @@ languages:
 exclude_paths:
     - tests/
     - .*
-pep8:
-    enabled: true
