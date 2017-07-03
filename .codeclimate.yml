@@ -1,8 +1,23 @@
+engines:
+    duplication:
+        enabled: true
+        config:
+            languages:
+                python:
+                    mass_threshold: 50
+    radon: 
+        enabled: true
+        config: 
+            threshold: "D"
+    pep8:
+        enabled: true
+
 languages:
     Ruby: false
     Javascript: false
     PHP: false
     Python: true
+
 exclude_paths:
     - tests/
     - .*
